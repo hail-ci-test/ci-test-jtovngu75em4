@@ -43,6 +43,7 @@ from .environment import DEFAULT_NAMESPACE, STORAGE_URI
 from .envoy import create_cds_response, create_rds_response
 from .github import PR, WIP, FQBranch, MergeFailureBatch, Repo, UnwatchedBranch, WatchedBranch, select_random_teammate
 
+
 with open(os.environ.get('HAIL_CI_OAUTH_TOKEN', 'oauth-token/oauth-token'), 'r', encoding='utf-8') as f:
     oauth_token = f.read().strip()
 
